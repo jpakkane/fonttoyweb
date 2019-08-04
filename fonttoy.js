@@ -5832,6 +5832,13 @@ asm["__Z8optimizeP6Stroke"] = function() {
   return real___Z8optimizeP6Stroke.apply(null, arguments);
 };
 
+var real___Z9build_svgR6StrokeR11SvgExporter = asm["__Z9build_svgR6StrokeR11SvgExporter"];
+asm["__Z9build_svgR6StrokeR11SvgExporter"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z9build_svgR6StrokeR11SvgExporter.apply(null, arguments);
+};
+
 var real___Z9node_name8NodeType = asm["__Z9node_name8NodeType"];
 asm["__Z9node_name8NodeType"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
@@ -18595,6 +18602,12 @@ var __Z8optimizeP6Stroke = Module["__Z8optimizeP6Stroke"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__Z8optimizeP6Stroke"].apply(null, arguments)
+};
+
+var __Z9build_svgR6StrokeR11SvgExporter = Module["__Z9build_svgR6StrokeR11SvgExporter"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__Z9build_svgR6StrokeR11SvgExporter"].apply(null, arguments)
 };
 
 var __Z9node_name8NodeType = Module["__Z9node_name8NodeType"] = function() {
