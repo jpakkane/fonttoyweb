@@ -1228,11 +1228,11 @@ function updateGlobalBufferViews() {
 
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 30448,
+    STACK_BASE = 30816,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 5273328,
-    DYNAMIC_BASE = 5273328,
-    DYNAMICTOP_PTR = 30416;
+    STACK_MAX = 5273696,
+    DYNAMIC_BASE = 5273696,
+    DYNAMICTOP_PTR = 30784;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1718,7 +1718,7 @@ var ASM_CONSTS = [];
 
 
 
-// STATICTOP = STATIC_BASE + 29424;
+// STATICTOP = STATIC_BASE + 29792;
 /* global initializers */  __ATINIT__.push({ func: function() { __GLOBAL__sub_I_parser_cpp() } });
 
 
@@ -1729,7 +1729,7 @@ var ASM_CONSTS = [];
 
 
 /* no memory initializer */
-var tempDoublePtr = 30432
+var tempDoublePtr = 30800
 assert(tempDoublePtr % 8 == 0);
 
 function copyTempFloat(ptr) { // functions, because inlining this code increases code size too much
@@ -5769,11 +5769,32 @@ asm["__GLOBAL__sub_I_parser_cpp"] = function() {
   return real___GLOBAL__sub_I_parser_cpp.apply(null, arguments);
 };
 
+var real___Z10draw_shapeR5ShapeR11SvgExporter = asm["__Z10draw_shapeR5ShapeR11SvgExporter"];
+asm["__Z10draw_shapeR5ShapeR11SvgExporter"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z10draw_shapeR5ShapeR11SvgExporter.apply(null, arguments);
+};
+
 var real___Z10token_name9TokenType = asm["__Z10token_name9TokenType"];
 asm["__Z10token_name9TokenType"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___Z10token_name9TokenType.apply(null, arguments);
+};
+
+var real___Z13optimize_sideP5Shape11WhichStroke = asm["__Z13optimize_sideP5Shape11WhichStroke"];
+asm["__Z13optimize_sideP5Shape11WhichStroke"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z13optimize_sideP5Shape11WhichStroke.apply(null, arguments);
+};
+
+var real___Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke = asm["__Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke"];
+asm["__Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke.apply(null, arguments);
 };
 
 var real___Z14model_progressPvPKdS1_ddddiii = asm["__Z14model_progressPvPKdS1_ddddiii"];
@@ -5783,11 +5804,11 @@ asm["__Z14model_progressPvPKdS1_ddddiii"] = function() {
   return real___Z14model_progressPvPKdS1_ddddiii.apply(null, arguments);
 };
 
-var real___Z14put_beziers_inR6StrokeR11SvgExporter = asm["__Z14put_beziers_inR6StrokeR11SvgExporter"];
-asm["__Z14put_beziers_inR6StrokeR11SvgExporter"] = function() {
+var real___Z14put_beziers_inR6StrokeR11SvgExporterb = asm["__Z14put_beziers_inR6StrokeR11SvgExporterb"];
+asm["__Z14put_beziers_inR6StrokeR11SvgExporterb"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___Z14put_beziers_inR6StrokeR11SvgExporter.apply(null, arguments);
+  return real___Z14put_beziers_inR6StrokeR11SvgExporterb.apply(null, arguments);
 };
 
 var real___Z14put_indexes_inR6StrokeR11SvgExporter = asm["__Z14put_indexes_inR6StrokeR11SvgExporter"];
@@ -5797,11 +5818,18 @@ asm["__Z14put_indexes_inR6StrokeR11SvgExporter"] = function() {
   return real___Z14put_indexes_inR6StrokeR11SvgExporter.apply(null, arguments);
 };
 
-var real___Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_ = asm["__Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"];
-asm["__Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"] = function() {
+var real___Z17optimize_skeletonP5Shape = asm["__Z17optimize_skeletonP5Shape"];
+asm["__Z17optimize_skeletonP5Shape"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_.apply(null, arguments);
+  return real___Z17optimize_skeletonP5Shape.apply(null, arguments);
+};
+
+var real___Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_ = asm["__Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"];
+asm["__Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_.apply(null, arguments);
 };
 
 var real___Z21compute_absolute_stepdRKNSt3__26vectorIdNS_9allocatorIdEEEE = asm["__Z21compute_absolute_stepdRKNSt3__26vectorIdNS_9allocatorIdEEEE"];
@@ -5825,18 +5853,18 @@ asm["__Z4maxddd"] = function() {
   return real___Z4maxddd.apply(null, arguments);
 };
 
-var real___Z8optimizeP6Stroke = asm["__Z8optimizeP6Stroke"];
-asm["__Z8optimizeP6Stroke"] = function() {
+var real___Z8optimizeP5Shape = asm["__Z8optimizeP5Shape"];
+asm["__Z8optimizeP5Shape"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___Z8optimizeP6Stroke.apply(null, arguments);
+  return real___Z8optimizeP5Shape.apply(null, arguments);
 };
 
-var real___Z9build_svgR6StrokeR11SvgExporter = asm["__Z9build_svgR6StrokeR11SvgExporter"];
-asm["__Z9build_svgR6StrokeR11SvgExporter"] = function() {
+var real___Z9build_svgR5ShapeR11SvgExporter = asm["__Z9build_svgR5ShapeR11SvgExporter"];
+asm["__Z9build_svgR5ShapeR11SvgExporter"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___Z9build_svgR6StrokeR11SvgExporter.apply(null, arguments);
+  return real___Z9build_svgR5ShapeR11SvgExporter.apply(null, arguments);
 };
 
 var real___Z9node_name8NodeType = asm["__Z9node_name8NodeType"];
@@ -5846,11 +5874,11 @@ asm["__Z9node_name8NodeType"] = function() {
   return real___Z9node_name8NodeType.apply(null, arguments);
 };
 
-var real___Z9write_svgR6StrokePKc = asm["__Z9write_svgR6StrokePKc"];
-asm["__Z9write_svgR6StrokePKc"] = function() {
+var real___Z9write_svgR5ShapePKc = asm["__Z9write_svgR5ShapePKc"];
+asm["__Z9write_svgR5ShapePKc"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___Z9write_svgR6StrokePKc.apply(null, arguments);
+  return real___Z9write_svgR5ShapePKc.apply(null, arguments);
 };
 
 var real___ZL14evaluate_modelPvPKdPdid = asm["__ZL14evaluate_modelPvPKdPdid"];
@@ -6061,6 +6089,13 @@ asm["__ZN11SvgExporter10draw_crossEdd"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___ZN11SvgExporter10draw_crossEdd.apply(null, arguments);
+};
+
+var real___ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_ = asm["__ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_"];
+asm["__ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_.apply(null, arguments);
 };
 
 var real___ZN11SvgExporter11draw_bezierERK5PointS2_S2_S2_b = asm["__ZN11SvgExporter11draw_bezierERK5PointS2_S2_S2_b"];
@@ -6462,6 +6497,27 @@ asm["__ZN5PointaSERKS_"] = function() {
   return real___ZN5PointaSERKS_.apply(null, arguments);
 };
 
+var real___ZN5ShapeC2EOS_ = asm["__ZN5ShapeC2EOS_"];
+asm["__ZN5ShapeC2EOS_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN5ShapeC2EOS_.apply(null, arguments);
+};
+
+var real___ZN5ShapeC2Ei = asm["__ZN5ShapeC2Ei"];
+asm["__ZN5ShapeC2Ei"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN5ShapeC2Ei.apply(null, arguments);
+};
+
+var real___ZN5ShapeD2Ev = asm["__ZN5ShapeD2Ev"];
+asm["__ZN5ShapeD2Ev"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN5ShapeD2Ev.apply(null, arguments);
+};
+
 var real___ZN5TokenC2EOS_ = asm["__ZN5TokenC2EOS_"];
 asm["__ZN5TokenC2EOS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
@@ -6504,6 +6560,13 @@ asm["__ZN6BezierC2E5PointS0_S0_S0_"] = function() {
   return real___ZN6BezierC2E5PointS0_S0_S0_.apply(null, arguments);
 };
 
+var real___ZN6BezierC2EOS_ = asm["__ZN6BezierC2EOS_"];
+asm["__ZN6BezierC2EOS_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN6BezierC2EOS_.apply(null, arguments);
+};
+
 var real___ZN6BezierC2ERKS_ = asm["__ZN6BezierC2ERKS_"];
 asm["__ZN6BezierC2ERKS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
@@ -6511,25 +6574,25 @@ asm["__ZN6BezierC2ERKS_"] = function() {
   return real___ZN6BezierC2ERKS_.apply(null, arguments);
 };
 
-var real___ZN6Bridge10get_strokeEv = asm["__ZN6Bridge10get_strokeEv"];
-asm["__ZN6Bridge10get_strokeEv"] = function() {
-  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
-  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZN6Bridge10get_strokeEv.apply(null, arguments);
-};
-
-var real___ZN6Bridge10has_strokeEv = asm["__ZN6Bridge10has_strokeEv"];
-asm["__ZN6Bridge10has_strokeEv"] = function() {
-  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
-  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZN6Bridge10has_strokeEv.apply(null, arguments);
-};
-
 var real___ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE = asm["__ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE"];
 asm["__ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE.apply(null, arguments);
+};
+
+var real___ZN6Bridge9get_shapeEv = asm["__ZN6Bridge9get_shapeEv"];
+asm["__ZN6Bridge9get_shapeEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN6Bridge9get_shapeEv.apply(null, arguments);
+};
+
+var real___ZN6Bridge9has_shapeEv = asm["__ZN6Bridge9has_shapeEv"];
+asm["__ZN6Bridge9has_shapeEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZN6Bridge9has_shapeEv.apply(null, arguments);
 };
 
 var real___ZN6BridgeC2Ev = asm["__ZN6BridgeC2Ev"];
@@ -8611,6 +8674,13 @@ asm["__ZNK16SmoothConstraint24append_free_variables_toERNSt3__26vectorIdNS0_9all
   return real___ZNK16SmoothConstraint24append_free_variables_toERNSt3__26vectorIdNS0_9allocatorIdEEEE.apply(null, arguments);
 };
 
+var real___ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE = asm["__ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE"];
+asm["__ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE.apply(null, arguments);
+};
+
 var real___ZNK19DirectionConstraint10get_limitsEv = asm["__ZNK19DirectionConstraint10get_limitsEv"];
 asm["__ZNK19DirectionConstraint10get_limitsEv"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
@@ -8779,6 +8849,13 @@ asm["__ZNK6Bezier2p2Ev"] = function() {
   return real___ZNK6Bezier2p2Ev.apply(null, arguments);
 };
 
+var real___ZNK6Bezier8evaluateEd = asm["__ZNK6Bezier8evaluateEd"];
+asm["__ZNK6Bezier8evaluateEd"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZNK6Bezier8evaluateEd.apply(null, arguments);
+};
+
 var real___ZNK6Parser14get_statementsEv = asm["__ZNK6Parser14get_statementsEv"];
 asm["__ZNK6Parser14get_statementsEv"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
@@ -8812,6 +8889,13 @@ asm["__ZNK6Stroke10get_pointsEv"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___ZNK6Stroke10get_pointsEv.apply(null, arguments);
+};
+
+var real___ZNK6Stroke12build_bezierEi = asm["__ZNK6Stroke12build_bezierEi"];
+asm["__ZNK6Stroke12build_bezierEi"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZNK6Stroke12build_bezierEi.apply(null, arguments);
 };
 
 var real___ZNK6Stroke13build_beziersEv = asm["__ZNK6Stroke13build_beziersEv"];
@@ -8875,6 +8959,13 @@ asm["__ZNK6Vector3dotERKS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___ZNK6Vector3dotERKS_.apply(null, arguments);
+};
+
+var real___ZNK6Vector5angleEv = asm["__ZNK6Vector5angleEv"];
+asm["__ZNK6Vector5angleEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___ZNK6Vector5angleEv.apply(null, arguments);
 };
 
 var real___ZNK6Vector6lengthEv = asm["__ZNK6Vector6lengthEv"];
@@ -13672,11 +13763,11 @@ asm["__ZNSt3__215__refstring_imp12_GLOBAL__N_113data_from_repEPNS1_9_Rep_baseE"]
   return real___ZNSt3__215__refstring_imp12_GLOBAL__N_113data_from_repEPNS1_9_Rep_baseE.apply(null, arguments);
 };
 
-var real___ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796 = asm["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796"];
-asm["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796"] = function() {
+var real___ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835 = asm["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835"];
+asm["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796.apply(null, arguments);
+  return real___ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835.apply(null, arguments);
 };
 
 var real___ZNSt3__215__word_boundaryIcNS_12regex_traitsIcEEED0Ev = asm["__ZNSt3__215__word_boundaryIcNS_12regex_traitsIcEEED0Ev"];
@@ -13749,32 +13840,32 @@ asm["__ZNSt3__216__pad_and_outputIwNS_11char_traitsIwEEEENS_19ostreambuf_iterato
   return real___ZNSt3__216__pad_and_outputIwNS_11char_traitsIwEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"];
-asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"];
+asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEEC2EOSB_ = asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEEC2EOSB_"];
@@ -13847,32 +13938,32 @@ asm["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJdNS_12basic_strin
   return real___ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
-asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
+asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_dS9_EEEENS0_13__valueless_tE = asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_dS9_EEEENS0_13__valueless_tE"];
@@ -13945,11 +14036,11 @@ asm["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJdNS_12basic_strin
   return real___ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"];
-asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"];
+asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_"];
@@ -13973,11 +14064,11 @@ asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE
   return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE19__generic_constructINS0_18__move_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlRSM_OT0_E_JRNS0_6__baseILSJ_1EJS8_dSE_EEEOSU_EEEDcSM_DpT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"];
-asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
+var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"];
+asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_ = asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_"];
@@ -14015,32 +14106,32 @@ asm["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm2ELm2EEE
   return real___ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm2ELm2EEE10__dispatchIOZNS0_13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE19__generic_constructINS0_18__move_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlRSM_OT0_E_JRNS0_6__baseILSJ_1EJS8_dSE_EEEOSU_EEEDcSM_DpT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"];
-asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"];
+asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_dS9_EEEENS0_13__valueless_tE = asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_dS9_EEEENS0_13__valueless_tE"];
@@ -14113,32 +14204,32 @@ asm["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJdNS_12basic_stri
   return real___ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
-asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
+asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"];
@@ -14211,32 +14302,32 @@ asm["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJdNS_12basic_
   return real___ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
-asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
+asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"];
@@ -14309,32 +14400,32 @@ asm["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJdNS_12basic_
   return real___ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
-asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
+asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"];
@@ -14407,32 +14498,32 @@ asm["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJdNS_12basic
   return real___ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
-asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"];
+asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"];
@@ -14512,11 +14603,11 @@ asm["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJdNS_12basic
   return real___ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev = asm["__ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev"];
-asm["__ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev = asm["__ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev"];
+asm["__ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail5__altILm1ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev = asm["__ZNSt3__216__variant_detail5__altILm1ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev"];
@@ -14533,11 +14624,11 @@ asm["__ZNSt3__216__variant_detail5__altILm2ENS_12basic_stringIcNS_11char_traitsI
   return real___ZNSt3__216__variant_detail5__altILm2ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
-asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
+asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
@@ -14554,32 +14645,32 @@ asm["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJdNS_12basic_stringIcNS_
   return real___ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
-asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_ = asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"];
+asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
-asm["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
+asm["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail6__implIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS9_ = asm["__ZNSt3__216__variant_detail6__implIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS9_"];
@@ -14652,11 +14743,11 @@ asm["__ZNSt3__216__variant_detail6__implIJdNS_12basic_stringIcNS_11char_traitsIc
   return real___ZNSt3__216__variant_detail6__implIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
-asm["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var real___ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
+asm["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
@@ -16003,11 +16094,11 @@ asm["__ZNSt3__26vectorI5PointNS_9allocatorIS1_EEED2Ev"] = function() {
   return real___ZNSt3__26vectorI5PointNS_9allocatorIS1_EEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_ = asm["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_"];
-asm["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_"] = function() {
+var real___ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_ = asm["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_"];
+asm["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_.apply(null, arguments);
+  return real___ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_.apply(null, arguments);
 };
 
 var real___ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS1_RS3_EE = asm["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS1_RS3_EE"];
@@ -16633,11 +16724,11 @@ asm["__ZNSt3__27num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEED2Ev"]
   return real___ZNSt3__27num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEED2Ev.apply(null, arguments);
 };
 
-var real___ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
-asm["__ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var real___ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = asm["__ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"];
+asm["__ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
+  return real___ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev.apply(null, arguments);
 };
 
 var real___ZNSt3__27variantIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS8_ = asm["__ZNSt3__27variantIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS8_"];
@@ -17172,18 +17263,18 @@ asm["__ZZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdN
   return real___ZZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE12__assign_altILm2ES9_RS9_EEvRNS0_5__altIXT_ET0_EEOT1_ENKUt_clENS_17integral_constantIbLb0EEE.apply(null, arguments);
 };
 
-var real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"];
-asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"] = function() {
+var real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"];
+asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_.apply(null, arguments);
+  return real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_.apply(null, arguments);
 };
 
-var real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_ = asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"];
-asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"] = function() {
+var real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_ = asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"];
+asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_.apply(null, arguments);
+  return real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_.apply(null, arguments);
 };
 
 var real___ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = asm["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"];
@@ -17681,6 +17772,20 @@ asm["_arg_n"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real__arg_n.apply(null, arguments);
+};
+
+var real__atan = asm["_atan"];
+asm["_atan"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real__atan.apply(null, arguments);
+};
+
+var real__atan2 = asm["_atan2"];
+asm["_atan2"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real__atan2.apply(null, arguments);
 };
 
 var real__catclose = asm["_catclose"];
@@ -18550,10 +18655,28 @@ var __GLOBAL__sub_I_parser_cpp = Module["__GLOBAL__sub_I_parser_cpp"] = function
   return Module["asm"]["__GLOBAL__sub_I_parser_cpp"].apply(null, arguments)
 };
 
+var __Z10draw_shapeR5ShapeR11SvgExporter = Module["__Z10draw_shapeR5ShapeR11SvgExporter"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__Z10draw_shapeR5ShapeR11SvgExporter"].apply(null, arguments)
+};
+
 var __Z10token_name9TokenType = Module["__Z10token_name9TokenType"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__Z10token_name9TokenType"].apply(null, arguments)
+};
+
+var __Z13optimize_sideP5Shape11WhichStroke = Module["__Z13optimize_sideP5Shape11WhichStroke"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__Z13optimize_sideP5Shape11WhichStroke"].apply(null, arguments)
+};
+
+var __Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke = Module["__Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__Z14distance_errorP5ShapeRKNSt3__26vectorIdNS1_9allocatorIdEEEE11WhichStroke"].apply(null, arguments)
 };
 
 var __Z14model_progressPvPKdS1_ddddiii = Module["__Z14model_progressPvPKdS1_ddddiii"] = function() {
@@ -18562,10 +18685,10 @@ var __Z14model_progressPvPKdS1_ddddiii = Module["__Z14model_progressPvPKdS1_dddd
   return Module["asm"]["__Z14model_progressPvPKdS1_ddddiii"].apply(null, arguments)
 };
 
-var __Z14put_beziers_inR6StrokeR11SvgExporter = Module["__Z14put_beziers_inR6StrokeR11SvgExporter"] = function() {
+var __Z14put_beziers_inR6StrokeR11SvgExporterb = Module["__Z14put_beziers_inR6StrokeR11SvgExporterb"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__Z14put_beziers_inR6StrokeR11SvgExporter"].apply(null, arguments)
+  return Module["asm"]["__Z14put_beziers_inR6StrokeR11SvgExporterb"].apply(null, arguments)
 };
 
 var __Z14put_indexes_inR6StrokeR11SvgExporter = Module["__Z14put_indexes_inR6StrokeR11SvgExporter"] = function() {
@@ -18574,10 +18697,16 @@ var __Z14put_indexes_inR6StrokeR11SvgExporter = Module["__Z14put_indexes_inR6Str
   return Module["asm"]["__Z14put_indexes_inR6StrokeR11SvgExporter"].apply(null, arguments)
 };
 
-var __Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_ = Module["__Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"] = function() {
+var __Z17optimize_skeletonP5Shape = Module["__Z17optimize_skeletonP5Shape"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__Z19estimate_derivativeP6StrokeRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"].apply(null, arguments)
+  return Module["asm"]["__Z17optimize_skeletonP5Shape"].apply(null, arguments)
+};
+
+var __Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_ = Module["__Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__Z19estimate_derivativeP18OptimizerArgumentsRKNSt3__26vectorIdNS1_9allocatorIdEEEEdS7_"].apply(null, arguments)
 };
 
 var __Z21compute_absolute_stepdRKNSt3__26vectorIdNS_9allocatorIdEEEE = Module["__Z21compute_absolute_stepdRKNSt3__26vectorIdNS_9allocatorIdEEEE"] = function() {
@@ -18598,16 +18727,16 @@ var __Z4maxddd = Module["__Z4maxddd"] = function() {
   return Module["asm"]["__Z4maxddd"].apply(null, arguments)
 };
 
-var __Z8optimizeP6Stroke = Module["__Z8optimizeP6Stroke"] = function() {
+var __Z8optimizeP5Shape = Module["__Z8optimizeP5Shape"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__Z8optimizeP6Stroke"].apply(null, arguments)
+  return Module["asm"]["__Z8optimizeP5Shape"].apply(null, arguments)
 };
 
-var __Z9build_svgR6StrokeR11SvgExporter = Module["__Z9build_svgR6StrokeR11SvgExporter"] = function() {
+var __Z9build_svgR5ShapeR11SvgExporter = Module["__Z9build_svgR5ShapeR11SvgExporter"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__Z9build_svgR6StrokeR11SvgExporter"].apply(null, arguments)
+  return Module["asm"]["__Z9build_svgR5ShapeR11SvgExporter"].apply(null, arguments)
 };
 
 var __Z9node_name8NodeType = Module["__Z9node_name8NodeType"] = function() {
@@ -18616,10 +18745,10 @@ var __Z9node_name8NodeType = Module["__Z9node_name8NodeType"] = function() {
   return Module["asm"]["__Z9node_name8NodeType"].apply(null, arguments)
 };
 
-var __Z9write_svgR6StrokePKc = Module["__Z9write_svgR6StrokePKc"] = function() {
+var __Z9write_svgR5ShapePKc = Module["__Z9write_svgR5ShapePKc"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__Z9write_svgR6StrokePKc"].apply(null, arguments)
+  return Module["asm"]["__Z9write_svgR5ShapePKc"].apply(null, arguments)
 };
 
 var __ZL14evaluate_modelPvPKdPdid = Module["__ZL14evaluate_modelPvPKdPdid"] = function() {
@@ -18800,6 +18929,12 @@ var __ZN11SvgExporter10draw_crossEdd = Module["__ZN11SvgExporter10draw_crossEdd"
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__ZN11SvgExporter10draw_crossEdd"].apply(null, arguments)
+};
+
+var __ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_ = Module["__ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN11SvgExporter10draw_shapeERKNSt3__26vectorI6BezierNS0_9allocatorIS2_EEEES7_"].apply(null, arguments)
 };
 
 var __ZN11SvgExporter11draw_bezierERK5PointS2_S2_S2_b = Module["__ZN11SvgExporter11draw_bezierERK5PointS2_S2_S2_b"] = function() {
@@ -19144,6 +19279,24 @@ var __ZN5PointaSERKS_ = Module["__ZN5PointaSERKS_"] = function() {
   return Module["asm"]["__ZN5PointaSERKS_"].apply(null, arguments)
 };
 
+var __ZN5ShapeC2EOS_ = Module["__ZN5ShapeC2EOS_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN5ShapeC2EOS_"].apply(null, arguments)
+};
+
+var __ZN5ShapeC2Ei = Module["__ZN5ShapeC2Ei"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN5ShapeC2Ei"].apply(null, arguments)
+};
+
+var __ZN5ShapeD2Ev = Module["__ZN5ShapeD2Ev"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN5ShapeD2Ev"].apply(null, arguments)
+};
+
 var __ZN5TokenC2EOS_ = Module["__ZN5TokenC2EOS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -19180,28 +19333,34 @@ var __ZN6BezierC2E5PointS0_S0_S0_ = Module["__ZN6BezierC2E5PointS0_S0_S0_"] = fu
   return Module["asm"]["__ZN6BezierC2E5PointS0_S0_S0_"].apply(null, arguments)
 };
 
+var __ZN6BezierC2EOS_ = Module["__ZN6BezierC2EOS_"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN6BezierC2EOS_"].apply(null, arguments)
+};
+
 var __ZN6BezierC2ERKS_ = Module["__ZN6BezierC2ERKS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__ZN6BezierC2ERKS_"].apply(null, arguments)
 };
 
-var __ZN6Bridge10get_strokeEv = Module["__ZN6Bridge10get_strokeEv"] = function() {
-  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
-  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZN6Bridge10get_strokeEv"].apply(null, arguments)
-};
-
-var __ZN6Bridge10has_strokeEv = Module["__ZN6Bridge10has_strokeEv"] = function() {
-  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
-  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZN6Bridge10has_strokeEv"].apply(null, arguments)
-};
-
 var __ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE = Module["__ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__ZN6Bridge7funcallERKNSt3__212basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIdNS4_IdEEEE"].apply(null, arguments)
+};
+
+var __ZN6Bridge9get_shapeEv = Module["__ZN6Bridge9get_shapeEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN6Bridge9get_shapeEv"].apply(null, arguments)
+};
+
+var __ZN6Bridge9has_shapeEv = Module["__ZN6Bridge9has_shapeEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZN6Bridge9has_shapeEv"].apply(null, arguments)
 };
 
 var __ZN6BridgeC2Ev = Module["__ZN6BridgeC2Ev"] = function() {
@@ -20986,6 +21145,12 @@ var __ZNK16SmoothConstraint24append_free_variables_toERNSt3__26vectorIdNS0_9allo
   return Module["asm"]["__ZNK16SmoothConstraint24append_free_variables_toERNSt3__26vectorIdNS0_9allocatorIdEEEE"].apply(null, arguments)
 };
 
+var __ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE = Module["__ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZNK18OptimizerArguments19calculate_value_forERKNSt3__26vectorIdNS0_9allocatorIdEEEE"].apply(null, arguments)
+};
+
 var __ZNK19DirectionConstraint10get_limitsEv = Module["__ZNK19DirectionConstraint10get_limitsEv"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -21130,6 +21295,12 @@ var __ZNK6Bezier2p2Ev = Module["__ZNK6Bezier2p2Ev"] = function() {
   return Module["asm"]["__ZNK6Bezier2p2Ev"].apply(null, arguments)
 };
 
+var __ZNK6Bezier8evaluateEd = Module["__ZNK6Bezier8evaluateEd"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZNK6Bezier8evaluateEd"].apply(null, arguments)
+};
+
 var __ZNK6Parser14get_statementsEv = Module["__ZNK6Parser14get_statementsEv"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -21158,6 +21329,12 @@ var __ZNK6Stroke10get_pointsEv = Module["__ZNK6Stroke10get_pointsEv"] = function
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__ZNK6Stroke10get_pointsEv"].apply(null, arguments)
+};
+
+var __ZNK6Stroke12build_bezierEi = Module["__ZNK6Stroke12build_bezierEi"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZNK6Stroke12build_bezierEi"].apply(null, arguments)
 };
 
 var __ZNK6Stroke13build_beziersEv = Module["__ZNK6Stroke13build_beziersEv"] = function() {
@@ -21212,6 +21389,12 @@ var __ZNK6Vector3dotERKS_ = Module["__ZNK6Vector3dotERKS_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["__ZNK6Vector3dotERKS_"].apply(null, arguments)
+};
+
+var __ZNK6Vector5angleEv = Module["__ZNK6Vector5angleEv"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["__ZNK6Vector5angleEv"].apply(null, arguments)
 };
 
 var __ZNK6Vector6lengthEv = Module["__ZNK6Vector6lengthEv"] = function() {
@@ -25324,10 +25507,10 @@ var __ZNSt3__215__refstring_imp12_GLOBAL__N_113data_from_repEPNS1_9_Rep_baseE = 
   return Module["asm"]["__ZNSt3__215__refstring_imp12_GLOBAL__N_113data_from_repEPNS1_9_Rep_baseE"].apply(null, arguments)
 };
 
-var __ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796 = Module["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796"] = function() {
+var __ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835 = Module["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_796"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__215__refstring_imp12_GLOBAL__N_113rep_from_dataEPKc_835"].apply(null, arguments)
 };
 
 var __ZNSt3__215__word_boundaryIcNS_12regex_traitsIcEEED0Ev = Module["__ZNSt3__215__word_boundaryIcNS_12regex_traitsIcEEED0Ev"] = function() {
@@ -25390,28 +25573,28 @@ var __ZNSt3__216__pad_and_outputIwNS_11char_traitsIwEEEENS_19ostreambuf_iterator
   return Module["asm"]["__ZNSt3__216__pad_and_outputIwNS_11char_traitsIwEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
+var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEEC2EOSB_ = Module["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEEC2EOSB_"] = function() {
@@ -25474,28 +25657,28 @@ var __ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJdNS_12basic_string
   return Module["asm"]["__ZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_dS9_EEEENS0_13__valueless_tE = Module["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_dS9_EEEENS0_13__valueless_tE"] = function() {
@@ -25558,10 +25741,10 @@ var __ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJdNS_12basic_string
   return Module["asm"]["__ZNSt3__216__variant_detail12__destructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
+var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_"] = function() {
@@ -25582,10 +25765,10 @@ var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE1
   return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE19__generic_constructINS0_18__move_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlRSM_OT0_E_JRNS0_6__baseILSJ_1EJS8_dSE_EEEOSU_EEEDcSM_DpT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
+var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_SE_EEEEEEDcSI_DpT0_"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_ = Module["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchIOZNS0_12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvEUlRT_E_JRNS0_6__baseILSG_1EJS8_dSE_EEEEEEDcSI_DpT0_"] = function() {
@@ -25618,28 +25801,28 @@ var __ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm2ELm2EEE1
   return Module["asm"]["__ZNSt3__216__variant_detail12__visitation6__base12__dispatcherIJLm2ELm2EEE10__dispatchIOZNS0_13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE19__generic_constructINS0_18__move_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlRSM_OT0_E_JRNS0_6__baseILSJ_1EJS8_dSE_EEEOSU_EEEDcSM_DpT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
+var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_dS9_EEEENS0_13__valueless_tE = Module["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS3_dS9_EEEENS0_13__valueless_tE"] = function() {
@@ -25702,28 +25885,28 @@ var __ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJdNS_12basic_strin
   return Module["asm"]["__ZNSt3__216__variant_detail13__constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = Module["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"] = function() {
@@ -25786,28 +25969,28 @@ var __ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJdNS_12basic_s
   return Module["asm"]["__ZNSt3__216__variant_detail17__copy_assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = Module["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"] = function() {
@@ -25870,28 +26053,28 @@ var __ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJdNS_12basic_s
   return Module["asm"]["__ZNSt3__216__variant_detail17__move_assignmentINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = Module["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"] = function() {
@@ -25954,28 +26137,28 @@ var __ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJdNS_12basic_
   return Module["asm"]["__ZNSt3__216__variant_detail18__copy_constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm0EJS3_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EECI2NS0_6__baseILSB_1EJS3_S9_EEEILm1EJS9_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
+var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_ = Module["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EEC2EOSC_"] = function() {
@@ -26044,10 +26227,10 @@ var __ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJdNS_12basic_
   return Module["asm"]["__ZNSt3__216__variant_detail18__move_constructorINS0_8__traitsIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev = Module["__ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev"] = function() {
+var __ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev = Module["__ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail5__altILm0E6StrokeED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail5__altILm0E5ShapeED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail5__altILm1ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev = Module["__ZNSt3__216__variant_detail5__altILm1ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev"] = function() {
@@ -26062,10 +26245,10 @@ var __ZNSt3__216__variant_detail5__altILm2ENS_12basic_stringIcNS_11char_traitsIc
   return Module["asm"]["__ZNSt3__216__variant_detail5__altILm2ENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var __ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
@@ -26080,28 +26263,28 @@ var __ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJdNS_12basic_stringIcNS_1
   return Module["asm"]["__ZNSt3__216__variant_detail6__baseILNS0_6_TraitE1EJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm0EJS2_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJRA40_KcEEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
+var __ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_ = Module["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEECI2NS0_6__baseILNS0_6_TraitE1EJS2_S8_EEEILm1EJS8_EEENS_16in_place_index_tIXT_EEEDpOT0_"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var __ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail6__implIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail6__implIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS9_ = Module["__ZNSt3__216__variant_detail6__implIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS9_"] = function() {
@@ -26164,10 +26347,10 @@ var __ZNSt3__216__variant_detail6__implIJdNS_12basic_stringIcNS_11char_traitsIcE
   return Module["asm"]["__ZNSt3__216__variant_detail6__implIJdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var __ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__216__variant_detail7__unionILNS0_6_TraitE1ELm0EJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
@@ -27322,10 +27505,10 @@ var __ZNSt3__26vectorI5PointNS_9allocatorIS1_EEED2Ev = Module["__ZNSt3__26vector
   return Module["asm"]["__ZNSt3__26vectorI5PointNS_9allocatorIS1_EEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_ = Module["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_"] = function() {
+var __ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_ = Module["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRK5PointS8_S8_S8_EEEvDpOT_"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEvDpOT_"].apply(null, arguments)
 };
 
 var __ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS1_RS3_EE = Module["__ZNSt3__26vectorI6BezierNS_9allocatorIS1_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS1_RS3_EE"] = function() {
@@ -27862,10 +28045,10 @@ var __ZNSt3__27num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEED2Ev = 
   return Module["asm"]["__ZNSt3__27num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEED2Ev"].apply(null, arguments)
 };
 
-var __ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
+var __ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev = Module["__ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZNSt3__27variantIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
+  return Module["asm"]["__ZNSt3__27variantIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEED2Ev"].apply(null, arguments)
 };
 
 var __ZNSt3__27variantIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS8_ = Module["__ZNSt3__27variantIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEC2EOS8_"] = function() {
@@ -28324,16 +28507,16 @@ var __ZZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS
   return Module["asm"]["__ZZNSt3__216__variant_detail12__assignmentINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEE12__assign_altILm2ES9_RS9_EEvRNS0_5__altIXT_ET0_EEOT1_ENKUt_clENS_17integral_constantIbLb0EEE"].apply(null, arguments)
 };
 
-var __ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = Module["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"] = function() {
+var __ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = Module["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"].apply(null, arguments)
+  return Module["asm"]["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"].apply(null, arguments)
 };
 
-var __ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_ = Module["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"] = function() {
+var __ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_ = Module["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return Module["asm"]["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ6StrokeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"].apply(null, arguments)
+  return Module["asm"]["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJ5ShapeNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm1ES9_EEEEDaSE_"].apply(null, arguments)
 };
 
 var __ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_ = Module["__ZZNSt3__216__variant_detail12__destructorINS0_8__traitsIJNS_9monostateEdNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEELNS0_6_TraitE1EE9__destroyEvENKUlRT_E_clINS0_5__altILm0ES3_EEEEDaSE_"] = function() {
@@ -28760,6 +28943,18 @@ var _arg_n = Module["_arg_n"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["_arg_n"].apply(null, arguments)
+};
+
+var _atan = Module["_atan"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["_atan"].apply(null, arguments)
+};
+
+var _atan2 = Module["_atan2"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["_atan2"].apply(null, arguments)
 };
 
 var _catclose = Module["_catclose"] = function() {
